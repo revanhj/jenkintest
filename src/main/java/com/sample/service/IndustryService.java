@@ -14,9 +14,7 @@ public class IndustryService {
 	@Autowired
 	private IndustryRepository industryRepository;
 
-	public Industry addIndustry(Industry industry) {
-		return industryRepository.save(industry);
-	}
+	 
 
 	public List<Industry> getIndustryList(List<String> sicCode) {
 		List<Industry> finalresult = industryRepository.findBySicCodeIn(sicCode);
